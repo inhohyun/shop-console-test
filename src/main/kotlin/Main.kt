@@ -14,6 +14,7 @@ fun main(args: Array<String>) {
         원하시는 카테고리를 입력해주세요.
         ***====================================***
     """.trimIndent())
+    //trimIndent : /n없이 enter로 라인 넘기기
 
     val categories = arrayOf("패션", "전자기기", "반려동물용품")
      for (category in categories) // for each문 같은 느낌?
