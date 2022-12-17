@@ -4,10 +4,11 @@ import data.Product
 import data.cartItems
 import java.io.File.separator
 
-class ShoppingCart {
+class ShoppingCart : Screen(){
     private val products = cartItems.products
 
     fun showCartItems(){
+        ScreenStack.push(this)
         if (products.isNotEmpty()){
             println(
                 products.keys.joinToString (
