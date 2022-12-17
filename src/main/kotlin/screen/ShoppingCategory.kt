@@ -15,11 +15,13 @@ class ShoppingCategory {
             selectedCategoy = readLine()
         }
         if (selectedCategoy == "#") {
-            //TODO 1. 장바구니 이동
+
         } else {
 
             if (categories.contains(selectedCategoy)){
-                //TODO 2. 카테고리에 해당하는 상품을 보여주기
+
+                val shoppingProductList = ShoppingProductList()
+                shoppingProductList.showProducts(selectedCategoy)
             }else{
                 showErrorMessage(selectedCategoy)
             }
